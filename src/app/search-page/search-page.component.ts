@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-page.component.css']
 })
 export class SearchPageComponent {
+  universities = ['CU', 'CMU','MU', 'SWU', 'TU', 'MFU', 'KU'];
+  numbersArray: number[] = [];
 
+  constructor() {
+    const randomNum = Math.floor(Math.random() * 10) + 1;
+    for (let i = 0; i < randomNum; i++) {
+      this.numbersArray.push(i);
+    }
+  }
 }
