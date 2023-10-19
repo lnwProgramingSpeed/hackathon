@@ -57,7 +57,7 @@ const routes: Routes = [
     path: 'inbox',
     component: InboxPageComponent,
   },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({
