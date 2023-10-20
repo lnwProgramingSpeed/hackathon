@@ -1,0 +1,257 @@
+/* /* 
+---------------------------------------------
+banner
+--------------------------------------------- 
+*/
+
+section.main-banner {
+    margin-top: 0px;
+  }
+  
+  .main-banner {
+    padding-top: 180px;
+  }
+  
+  .main-banner .right-image {
+    margin-left: 120px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .main-banner .right-image img {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .main-banner .right-image::after {
+    position: absolute;
+    background-image: url(./img/banner-right-dec.png);
+    width: 378px;
+    height: 378px;
+    content: '';
+    right: -25%;
+    z-index: 1;
+  }
+  
+  .main-banner .header-text::after {
+    position: absolute;
+    background-image: url(./img/banner-left-dec.png);
+    width: 214px;
+    height: 429px;
+    content: '';
+    left: 0;
+    bottom: -240px;
+    z-index: 1;
+  }
+  
+  .main-banner .header-text h6 {
+    position: relative;
+    z-index: 2;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #777777;;
+  }
+  
+  .main-banner .header-text h2 {
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    font-size: 64px;
+    color: #111111;
+    font-weight: 900;
+    line-height: 74px;
+    margin-bottom: 40px;
+  }
+  
+  .main-banner .header-text h2 em {
+    font-style: normal;
+    color: #dc8cdb;
+  }
+  
+  .main-banner .main-button-gradient {
+    position: relative;
+    z-index: 2;
+  }
+  
+/*
+---------------------------------------------
+services
+---------------------------------------------
+*/ 
+
+.services .item {
+    border-radius: 15px;
+    text-align: center;
+    padding: 50px 30px;
+    margin: 15px;
+    transition: all .3s;
+  }
+  
+  .services .item:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+  }
+  
+  .services .item h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  
+  .services .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .services .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0px 4px;
+  }
+  
+  .services .owl-dots .active {
+    background-color: #dc8cdb;
+  }
+
+   .item{
+    padding: 50px;
+  }
+  
+  
+/*
+---------------------------------------------
+cta
+---------------------------------------------
+*/
+
+section.simple-cta {
+    background-image: url(./img/cta-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding: 180px 0px 180px 0px;
+  }
+  
+  section.simple-cta .left-image {
+    margin-right: 45px;
+  }
+  
+  section.simple-cta h6 {
+    font-size: 17px;
+    color: #fff;
+  }
+  
+  section.simple-cta h4 {
+    font-size: 62px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 74px;
+    margin-top: 20px;
+  }
+  
+  section.simple-cta p {
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+/* 
+---------------------------------------------
+testimonials
+--------------------------------------------- 
+*/
+
+section.testimonials {
+    position: relative;
+  }
+  
+  section.testimonials:before {
+    position: absolute;
+    content: '';
+    background-image: url(./img/testimonials-left-dec.png);
+    left: 0px;
+    top: -140px;
+    width: 593px;
+    height: 352px;
+    z-index: 1;
+  }
+  
+  section.testimonials:after {
+    position: absolute;
+    content: '';
+    background-image: url(./img/testimonials-right-dec.png);
+    right: 0px;
+    bottom: -140px;
+    width: 632px;
+    height: 352px;
+    z-index: 1;
+  }
+  
+  .testimonials .item {
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #fff;
+    margin: 15px;
+    transition: all .3s;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .testimonials .item:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+  }
+  
+  .testimonials .item p {
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  .testimonials .item h4 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+  }
+  
+  .testimonials .item span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #dc8cdb;
+  }
+  
+  .testimonials .item img {
+    max-width: 44px;
+    z-index: 2;
+    position: absolute;
+    right: 30px;
+    bottom: 30px
+  }
+  
+  .testimonials .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .testimonials .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0px 4px;
+  }
+  
+  .testimonials .owl-dots .active {
+    background-color: #dc8cdb;
+  }
+  
+
+  .owl-service-item owl-carousel{
+    padding: 50px;
+  }
+
+
+    
