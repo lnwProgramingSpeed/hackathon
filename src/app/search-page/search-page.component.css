@@ -88,3 +88,9 @@
 .card:hover .card-content {
     bottom: 0;
 }
+
+.input-group button {
+    position: absolute;
+    right: 5px;
+    overflow: hidden;
+}
