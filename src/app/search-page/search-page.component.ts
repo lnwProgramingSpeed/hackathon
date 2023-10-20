@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class SearchPageComponent {
   universities = ['CU', 'CMU','MU', 'SWU', 'TU', 'MFU', 'KU'];
+  yearList = [2000,2005,2010,2015,2020];
   numbersArray: number[] = [];
 
   constructor() {

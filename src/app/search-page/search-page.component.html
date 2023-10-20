@@ -1,15 +1,50 @@
 <app-nav-bar></app-nav-bar>
 <div class="container">
 
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-            <li *ngFor=" let university of universities"><a class="dropdown-item" [href]="'#' + university">{{ university }}</a></li>
-        </ul>
+    <div class="container text-center mt-3">
+        <div class="row">
+            <div class="col col-md-4">
+                <input class="form-control border-secondary rounded-pill pr-5" type="search" value="search"
+                    id="example-search-input2">
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-outline-light text-dark border-0 rounded-pill ml-n5" type="button" >
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="dropdown rounded-pill">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select university
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li *ngFor="let university of universities"><a class="dropdown-item"
+                                        [href]="'#'+ university">{{university}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown rounded-pill">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select year
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li *ngFor="let year of yearList"><a class="dropdown-item"
+                                        [href]="'#'+ year">{{year}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
+<div class="container text-center mt-3">
     <div class="row gap-3">
         <div class="col" *ngFor="let randomNumber of numbersArray">
             <div class="card" style="width: 400px;">
