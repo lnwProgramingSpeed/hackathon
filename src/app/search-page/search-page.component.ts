@@ -7,7 +7,14 @@ import { Component } from '@angular/core';
 })
 export class SearchPageComponent {
   universities = ['CU', 'CMU','MU', 'SWU', 'TU', 'MFU', 'KU'];
-  yearList = [2000,2005,2010,2015,2020];
+  selectedUniversity: string = 'University';
+
+  yearList = [2019,2020,2021,2022,2023];
+  selectedYear = 'Year';
+
+  termList = [1,2,3];
+  selectedTerm = 'Term';
+
   numbersArray: number[] = [];
 
   constructor() {
@@ -16,4 +23,17 @@ export class SearchPageComponent {
       this.numbersArray.push(i);
     }
   }
+
+  selectUniversity(university: string) {
+    this.selectedUniversity = university;
+  }
+
+  selectYear(year: string) {
+    this.selectedYear = year;
+  }
+
+  selectTerm(term: string) {
+    this.selectedTerm = term;
+  }
+  
 }

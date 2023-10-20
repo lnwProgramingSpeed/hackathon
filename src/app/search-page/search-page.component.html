@@ -15,27 +15,39 @@
 
             <div class="col-6 col-md-4">
                 <div class="row">
-                    <div class="col-8 col-sm-6">
+                    <div class="col-6 col-md-4">
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Select university
+                            <button class="btn btn-secondary dropdown-toggle rounded-pill" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ selectedUniversity }}
                             </button>
                             <ul class="dropdown-menu">
                                 <li *ngFor="let university of universities"><a class="dropdown-item"
-                                        [href]="'#'+ university">{{university}}</a></li>
+                                        (click)="selectUniversity(university)">{{university}}</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-4 col-sm-6">
+                    <div class="col-6 col-md-4">
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Select year
+                            <button class="btn btn-secondary dropdown-toggle rounded-pill" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                {{selectedYear}}
                             </button>
                             <ul class="dropdown-menu">
                                 <li *ngFor="let year of yearList"><a class="dropdown-item"
-                                        [href]="'#'+ year">{{year}}</a></li>
+                                    (click)="selectYear(year.toString())">{{year}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle rounded-pill" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                {{selectedTerm}}
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li *ngFor="let term of termList"><a class="dropdown-item"
+                                    (click)="selectTerm(term.toString())">{{term}}</a></li>
                             </ul>
                         </div>
                     </div>
