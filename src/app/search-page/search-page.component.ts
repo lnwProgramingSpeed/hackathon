@@ -17,11 +17,14 @@ export class SearchPageComponent {
 
   numbersArray: number[] = [];
 
+  inputValue: string = 'Search';
+
   constructor() {
     const randomNum = Math.floor(Math.random() * 10) + 1;
     for (let i = 0; i < randomNum; i++) {
       this.numbersArray.push(i);
     }
+    
   }
 
   selectUniversity(university: string) {
@@ -36,4 +39,7 @@ export class SearchPageComponent {
     this.selectedTerm = term;
   }
   
+  showValue(){
+    console.log(this.inputValue);
+  }
 }
