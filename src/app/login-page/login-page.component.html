@@ -1,1 +1,51 @@
-<p>login-page works!</p>
+<app-nav-bar></app-nav-bar>
+
+<section>
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div>
+          <div class="card-body p-5 text-center">
+            <h1 class="mb-4 fw-bold">UHELP</h1>
+
+            <h3 class="mb-5">Sign in</h3>
+
+            <div class="form-outline mb-4">
+              <input
+                type="email"
+                id="Email"
+                class="form-control form-control-lg"
+              />
+              <label class="form-label" for="Email">Email</label>
+            </div>
+
+            <div class="form-outline mb-4">
+              <input
+                type="password"
+                id="Password"
+                class="form-control form-control-lg"
+              />
+              <label class="form-label" for="Password">Password</label>
+            </div>
+
+            <div class="d-grid gap-2">
+              <a
+                class="btn btn-primary btn-lg btn-block"
+                type="submit"
+                href="home"
+              >
+                Sign in
+              </a>
+
+              <hr class="my-4" />
+
+              <div class="text-center">
+                <p>Don't have an account? <a href="register">Register</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
