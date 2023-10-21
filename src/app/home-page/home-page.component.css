@@ -1,4 +1,10 @@
-/* /* 
+body {
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+
+/* /* /* 
 ---------------------------------------------
 banner
 --------------------------------------------- 
@@ -30,7 +36,7 @@ section.main-banner {
     height: 378px;
     content: '';
     right: -25%;
-    z-index: 1;
+    z-index: -1;
   }
   
   .main-banner .header-text::after {
@@ -41,7 +47,7 @@ section.main-banner {
     content: '';
     left: 0;
     bottom: -240px;
-    z-index: 1;
+    z-index: -1;
   }
   
   .main-banner .header-text h6 {
@@ -74,52 +80,12 @@ section.main-banner {
     z-index: 2;
   }
   
-/*
----------------------------------------------
-services
----------------------------------------------
-*/ 
 
-.services .item {
-    border-radius: 15px;
-    text-align: center;
-    padding: 50px 30px;
-    margin: 15px;
-    transition: all .3s;
-  }
-  
-  .services .item:hover {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
-  }
-  
-  .services .item h4 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 800;
-  }
-  
-  .services .owl-dots {
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .services .owl-dots .owl-dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 50%;
-    margin: 0px 4px;
-  }
-  
-  .services .owl-dots .active {
-    background-color: #dc8cdb;
-  }
 
-   .item{
-    padding: 50px;
-  }
-  
+
+
+
+
   
 /*
 ---------------------------------------------
@@ -138,6 +104,7 @@ section.simple-cta {
   
   section.simple-cta .left-image {
     margin-right: 45px;
+    
   }
   
   section.simple-cta h6 {
@@ -159,99 +126,395 @@ section.simple-cta {
     margin-bottom: 40px;
   }
   
-/* 
----------------------------------------------
-testimonials
---------------------------------------------- 
-*/
 
-section.testimonials {
-    position: relative;
-  }
   
-  section.testimonials:before {
+
+
+
+  /* footer */
+
+  .footer-07 {
+    background: #121212;
     position: absolute;
-    content: '';
-    background-image: url(./img/testimonials-left-dec.png);
-    left: 0px;
-    top: -140px;
-    width: 593px;
-    height: 352px;
-    z-index: 1;
-  }
-  
-  section.testimonials:after {
-    position: absolute;
-    content: '';
-    background-image: url(./img/testimonials-right-dec.png);
-    right: 0px;
-    bottom: -140px;
-    width: 632px;
-    height: 352px;
-    z-index: 1;
-  }
-  
-  .testimonials .item {
-    border-radius: 15px;
-    padding: 30px;
-    background-color: #fff;
-    margin: 15px;
-    transition: all .3s;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .testimonials .item:hover {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
-  }
-  
-  .testimonials .item p {
-    font-size: 16px;
-    font-style: italic;
-  }
-  
-  .testimonials .item h4 {
-    margin-top: 30px;
-    font-size: 20px;
-    font-weight: 900;
-    position: relative;
-  }
-  
-  .testimonials .item span {
-    font-size: 13px;
-    font-weight: 700;
-    color: #dc8cdb;
-  }
-  
-  .testimonials .item img {
-    max-width: 44px;
-    z-index: 2;
-    position: absolute;
-    right: 30px;
-    bottom: 30px
-  }
-  
-  .testimonials .owl-dots {
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.col-md-12 {
     text-align: center;
-    margin-top: 30px;
-  }
-  
-  .testimonials .owl-dots .owl-dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 50%;
-    margin: 0px 4px;
-  }
-  
-  .testimonials .owl-dots .active {
-    background-color: #dc8cdb;
-  }
-  
-
-  .owl-service-item owl-carousel{
-    padding: 50px;
-  }
+}
 
 
-    
+
+/*--------------------------------------------------------------
+# App Features
+--------------------------------------------------------------*/
+.features .content {
+  padding: 30px 0;
+}
+
+.features .content .icon-box {
+  margin-top: 25px;
+}
+
+.features .content .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px 60px;
+}
+
+.features .content .icon-box i {
+  font-size: 48px;
+  float: left;
+  color: #5777ba;
+}
+
+.features .content .icon-box p {
+  font-size: 15px;
+  color: #979aa1;
+  margin-left: 60px;
+}
+
+
+
+/* back-card */
+.ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+body {
+  background-color: #000;
+}
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  padding: 50px 0;
+}
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+
+  overflow: hidden;
+
+  position: relative;
+}
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 979px) {
+  .ag-format-container {
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+    font-size: 24px;
+  }
+
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+/* back-card */
+
+
+
+
+
+
+/* HEADING */
+
+.heading {
+  text-align: center;
+}
+
+.heading__title {
+  font-weight: 600;
+}
+
+.heading__credits {
+  margin: 10px 0px;
+  color: #888888;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+.heading__link {
+  text-decoration: none;
+}
+
+.heading__credits .heading__link {
+  color: inherit;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+  min-height: 100px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.card__link,
+.card__exit,
+.card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+.card__link:hover::after {
+  width: 100%;
+}
+
+.card__exit {
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+.card__icon {
+  grid-row: 2/3;
+  font-size: 30px;
+}
+
+.card__title {
+  grid-row: 3/4;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.card__apply {
+  grid-row: 4/5;
+  align-self: center;
+}
+
+/* CARD BACKGROUNDS */
+
+.card-1 {
+  background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+  background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+  background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+  background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .card {
+    width: 100%;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+}
+
