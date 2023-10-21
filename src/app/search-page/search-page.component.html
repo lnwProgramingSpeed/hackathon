@@ -1,2 +1,76 @@
-<app-nav-bar></app-nav-bar> 
-<p>search-page works!</p>
+<app-nav-bar></app-nav-bar>
+<div class="container">
+
+    <div class="container text-center mt-3">
+        <div class="row">
+            <div class="col col-md-8">
+                <div class="input-group">
+                    <input class="form-control border-secondary rounded-pill pr-5" type="search" value="search"
+                        id="example-search-input2" [(ngModel)]="inputValue">
+                    <button class="btn btn-outline-light text-dark border-0 rounded-pill ml-n5" type="button"
+                    (click)="showValue()">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle rounded-pill" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ selectedUniversity }}
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li *ngFor="let university of universities"><a class="dropdown-item"
+                                        (click)="selectUniversity(university)">{{university}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle rounded-pill" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                {{selectedYear}}
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li *ngFor="let year of yearList"><a class="dropdown-item"
+                                        (click)="selectYear(year.toString())">{{year}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle rounded-pill" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                {{selectedTerm}}
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li *ngFor="let term of termList"><a class="dropdown-item"
+                                        (click)="selectTerm(term.toString())">{{term}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center mt-3">
+    <div class="row gap-3">
+        <div class="col" *ngFor="let randomNumber of numbersArray">
+            <div class="card" style="width: 400px;">
+                <img [src]="'https://picsum.photos/1000/1000?random='+ randomNumber" class="card-img-top"
+                    alt="random-img">
+                <div class="card-body">
+                    <h5 class="card-title">Card with stretched link</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="buying" class="btn btn-primary stretched-link">View trailer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
