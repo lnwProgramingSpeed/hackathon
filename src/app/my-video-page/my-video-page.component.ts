@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-video-page.component.css']
 })
 export class MyVideoPageComponent {
-
+  numbersArray: number[] = [];
+  constructor() {
+    const randomNum = Math.floor(Math.random() * 10) + 1;
+    for (let i = 0; i < randomNum; i++) {
+      this.numbersArray.push(i);
+    }
+    
+  }
 }

@@ -1,1 +1,47 @@
-<p>my-video-page works!</p>
+<app-nav-bar></app-nav-bar>
+
+<!-- profile-container -->
+<div class="align-middle mt-2">
+    <div class="row">
+        <div class="col-sm-6 col-md-8">
+            <div class="row ms-5">
+                <div class="text-center col-4">
+                    <img src="https://i.pinimg.com/564x/55/94/29/55942919e0ecd831823db5c02b3636af.jpg" alt="profile"
+                        class="rounded-circle p-lg-3 profile-img">
+                </div>
+                <div class="col-4 align-self-center">
+                    <p class="fs-4">Makima-sama's slave</p>
+                    <p class="fs-6">
+                        @WoofWoofWoof
+                        <button class="btn btn-outline-light text-dark border-0 rounded-pill">
+                            <i class="fa fa-pencil-square-o"></i>
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- my-video-container -->
+<div class="container text-center mt-4">
+    <div class="row gap-3">
+        <div class="col">
+            <button class="card bg-dark bg-gradient fs-1">
+                <i class="fa fa-solid fa-plus position-absolute top-50 start-50 translate-middle"
+                    style="color: #ffffff;"></i>
+            </button>
+        </div>
+        <div class="col" *ngFor="let randomNumber of numbersArray">
+            <div class="card">
+                <img [src]="'https://picsum.photos/740/480?random='+ randomNumber" class="card-img-top" alt="my-video">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
