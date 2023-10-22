@@ -31,7 +31,7 @@ section.main-banner {
   
   .main-banner .right-image::after {
     position: absolute;
-    background-image: url(./img/banner-right-dec.png);
+    background-image: url(../../assets/img/banner-right-dec.png);
     width: 378px;
     height: 378px;
     content: '';
@@ -41,7 +41,7 @@ section.main-banner {
   
   .main-banner .header-text::after {
     position: absolute;
-    background-image: url(./img/banner-left-dec.png);
+    background-image: url(../../assets/img/banner-left-dec.png);
     width: 214px;
     height: 429px;
     content: '';
@@ -95,7 +95,7 @@ cta
 
 
 section.simple-cta {
-    background-image: url(./img/cta-bg.png);
+    background-image: url(../../assets/img/cta-bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
