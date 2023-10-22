@@ -1,2 +1,12 @@
 <app-nav-bar></app-nav-bar>
-<p>inbox-page works!</p>
+
+<div class="inbox">
+  <h1>กล่องข้อความ</h1>
+  <div class="message-list">
+    <div *ngFor="let message of messages" class="message">
+      {{ message }}
+    </div>
+  </div>
+  <input [(ngModel)]="newMessage" (keyup.enter)="sendMessage()" placeholder="พิมพ์ข้อความ...">
+  <button (click)="sendMessage()">ส่ง</button>
+</div>

@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./inbox-page.component.css']
 })
 export class InboxPageComponent {
+  messages: string[] = [];
+  newMessage: string = '';
 
+  sendMessage() {
+    if (this.newMessage) {
+      this.messages.push(this.newMessage);
+      this.newMessage = '';
+    }
+  }
 }
