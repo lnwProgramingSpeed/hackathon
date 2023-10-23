@@ -1,13 +1,50 @@
 <app-nav-bar></app-nav-bar>
 
-<div class="container">
-    <div class="d-flex justify-content-center align-items-start rounded">
-        <div class="ratio ratio-16x9 mt-4">
-            <iframe src="https://www.youtube.com/embed/rRPQs_kM_nw" title="YouTube video" allowfullscreen></iframe>
+<div class="d-flex justify-content-center align-items-start rounded">
+    <div class="ratio ratio-16x9 m-4">
+        <iframe src="https://www.youtube.com/embed/rRPQs_kM_nw" title="YouTube video" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="container mt-4 mb-3">
+
+    <div class="d-flex flex-row mb-3">
+        <div class="p-2">
+            <img src="https://picsum.photos/50/50" alt="profile" class="rounded-circle">
+        </div>
+        <div class="p-2">
+            <p class="fs-6">
+                Makima-sama's slave
+                <br>
+                @WoofWoofWoof
+            </p>
+            <p class="fs-6">
+                Id interdum velit laoreet id donec ultrices tincidunt. Et netus et malesuada fames ac turpis
+                egestas.
+            </p>
         </div>
     </div>
-    <div class="mt-5 ms-5 ">
-        <img src="https://picsum.photos/50/50" alt="profile" class="rounded-circle">
 
+    <div class="row text-center">
+        <div class="col-auto me-auto"></div>
+        <div class="col-auto">
+            PRICE <br> 250 BATH<br>
+            <button type="button" class="btn btn-primary rounded-pill">Buy</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid text-uppercase">
+    Similar Video
+    <div class="row row-g-2 g-lg-3">
+        <ul class="list-group list-group-horizontal position-relative overflow-x-scroll">
+            <li class="list-group-item" *ngFor="let randomNumber of numbersArray">
+                <div class="card" style="width: 400px;">
+                    <img [src]="'https://picsum.photos/740/480?random='+ randomNumber" class="card-img-top"
+                        alt="video list">
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
