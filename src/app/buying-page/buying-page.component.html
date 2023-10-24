@@ -6,6 +6,7 @@
       src="https://www.youtube.com/embed/rRPQs_kM_nw"
       title="YouTube video"
       allowfullscreen
+      style="padding-top: 50px"
     ></iframe>
   </div>
 </div>
@@ -35,15 +36,16 @@
   <div class="row text-center">
     <div class="col-auto me-auto"></div>
     <div class="col-auto">
-      PRICE <br />
-      250 BATH<br />
-      <a href="qr" type="button" class="btn btn-primary rounded-pill">Buy</a>
+      <h6>PRICE</h6>
+      <h6 style="color: rgb(225, 40, 40)">250 BATH</h6>
+      <br />
+      <a href="qr" type="button" class="btn btn-primary">Buy</a>
     </div>
   </div>
 </div>
 
 <div class="container-fluid text-uppercase">
-  Similar Video
+  <h3>Similar Video</h3>
   <div class="row row-g-2 g-lg-3">
     <ul
       class="list-group list-group-horizontal position-relative overflow-x-scroll"
@@ -58,5 +60,59 @@
         </div>
       </li>
     </ul>
+  </div>
+</div>
+
+<div class="container bootdey">
+  <div class="col-md-12 bootstrap snippets">
+    <h3>Comments</h3>
+    <div class="panel">
+      <div class="panel-body">
+        <textarea
+          class="form-control"
+          rows="2"
+          placeholder="What are you thinking?"
+        ></textarea>
+        <div class="mar-top clearfix">
+          <button class="btn btn-sm btn-primary pull-right" type="submit">
+            comment
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Newsfeed Content -->
+        <!--===================================================-->
+        <div class="media-block" *ngFor="let randomNumber of numbersArray">
+          <a class="media-left" href="#">
+            <img
+              class="img-circle img-sm"
+              alt="Profile Picture"
+              src="https://bootdey.com/img/Content/avatar/avatar1.png"
+            />
+          </a>
+          <div class="media-body">
+            <div class="mar-btm">
+              <a
+                href="#"
+                class="btn-link text-semibold media-heading box-inline"
+                >james</a
+              >
+              <p class="text-muted text-sm">
+                <i class="fa fa-mobile fa-lg"></i> - From Mobile - 11 min ago
+              </p>
+            </div>
+            <p>
+              consectetuer adipiscing elit, sed diam nonummy nibh euismod
+              tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+              enim ad minim veniam, quis nostrud exerci tation ullamcorper
+              suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            </p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
