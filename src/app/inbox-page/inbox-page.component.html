@@ -1,16 +1,47 @@
 <app-nav-bar></app-nav-bar>
 
-<div class="text-center mt-5 fs-1">
-  INBOX
-</div>
+<section>
+  <!-- Chat container -->
+  <div class="container py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-6 height: 100px">
+        <div class="card" id="chat2">
+          <!-- Card header -->
+          <div
+            class="card-header d-flex justify-content-between align-items-center p-3"
+          >
+            <h5 class="mb-0">Inbox</h5>
+          </div>
+          <!-- Card body (chat messages) -->
+          <div
+            class="card-body"
+            data-mdb-perfect-scrollbar="true"
+            style="position: relative; height: 400px"
+          >
+            <!-- Chat messages -->
+            <!-- Add comments here to describe each section of the chat -->
+          </div>
 
-<div class="inbox">
-  <h1>กล่องข้อความ</h1>
-  <div class="message-list">
-    <div *ngFor="let message of messages" class="message">
-      {{ message }}
+          <!-- Card footer (message input) -->
+          <div
+            class="card-footer text-muted d-flex justify-content-start align-items-center p-3"
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+              alt="avatar 3"
+              style="width: 40px; height: 100%"
+            />
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="exampleFormControlInput1"
+              placeholder="Type message"
+              id="message-input"
+            />
+            <button class="btn btn-primary" id="send-button">Send</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <input [(ngModel)]="newMessage" (keyup.enter)="sendMessage()" placeholder="พิมพ์ข้อความ...">
-  <button (click)="sendMessage()">ส่ง</button>
-</div>
+</section>
