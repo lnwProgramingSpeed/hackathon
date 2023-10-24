@@ -1,8 +1,9 @@
-body {
-  background-color: #000;
-  overflow-x: hidden;
-}
+body{
+  overflow-x: hidden;  
+  background-color: #201e1e;
+  color: #ffffff;
 
+}
 
 /* /* /* 
 ---------------------------------------------
@@ -135,7 +136,7 @@ section.simple-cta {
   /* footer */
 
   .footer-07 {
-    background: #121212;
+    background: #7b00ff;
     position: absolute;
     left: 0;
     right: 0;
@@ -182,14 +183,12 @@ section.simple-cta {
 
 
 
-/* back-card */
+/* black-card */
 .ag-format-container {
   width: 1142px;
   margin: 0 auto;
 }
-body {
-  background-color: #000;
-}
+
 .ag-courses_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,7 +367,7 @@ body {
     font-size: 16px;
   }
 }
-/* back-card */
+/* black-card */
 
 
 
@@ -517,5 +516,10 @@ body {
   .cards {
     justify-content: center;
   }
+}
+
+
+a {
+  text-decoration: none !important;
 }
 
